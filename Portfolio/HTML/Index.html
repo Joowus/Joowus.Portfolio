@@ -4,14 +4,105 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="/Portfolio/CSS/style.css" />
-        <title></title>
+        <title>Portfolio</title>
     </head>
 
     <body>
-        <div id="root"></div>
-        <script src="/Portfolio/JSX/index.jsx" type="module"></script>
+        <div>
+
+            <header class="header">
+                <nav class="navLeft">
+                    <ul>
+                        <li class="navButton"><a href="#home">Home</a></li>
+                        <li class="navButton"><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <h1>Portfolio</h1>
+                </div>
+                <nav class="navRight">
+                    <ul>
+                        <li class="navButton"><a href="#projects">Projects</a></li>
+                        <li class="navButton"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section class="introduction" id="home">
+                    <img src="/Portfolio/Images/profile.png" alt="Profile Picture" class="profile-pic">
+                    <h1>Welcome to my Portfolio</h1>
+                    <p>This is a showcase of my projects and skills as a full-stack developer.</p>
+                    <div class="skills-container">
+                        <h1>My Skills</h1>
+                        <ul class="skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">JavaScript</li>
+                            <li class="skill">Node.js</li>
+                            <li class="skill">GitHub</li>
+                            <li class="skill">React</li>
+                            <li class="skill">Git</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="about">
+                    <div class="about-container">
+                        <h1 class="about-title">About Me</h1>
+                        <div>
+                            <ul class="about-categories">
+                                <li id="aboutBtn1" class="about-button about-button-left about-active">Background</li>
+                                <li id="aboutBtn2" class="about-button">Experience</li>
+                                <li id="aboutBtn3" class="about-button">Education</li>
+                                <li id="aboutBtn4" class="about-button">Goals</li>
+                                <li id="aboutBtn5" class="about-button">Values</li>
+                                <li id="aboutBtn6" class="about-button">Hobbies</li>
+                                <li id="aboutBtn7" class="about-button about-button-right">Fun Facts</li>
+                            </ul>
+                            <p id="aboutContent" class="about-content">
+                                Hello! I'm John Doe, a passionate full-stack developer with experience in building dynamic web applications. I love coding and am always eager to learn new technologies and improve my skills.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <div class="projects-container">
+                        <h2>Projects</h2>
+                        <div class="project">
+                            <h3>Project One</h3>
+                            <div>
+                                <img src="/Portfolio/Images/Test/project1.png" alt="Project One Screenshot" class="project-image">
+                                <p>A web application that allows users to track their tasks and manage their time effectively.</p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3>Project Two</h3>
+                            <div>
+                                <img src="/Portfolio/Images/project2.png" alt="Project Two Screenshot" class="project-image">
+                                 <p>A social media platform that connects people with similar interests and allows them to share content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <p>You can reach me at john.doe@example.com</p>
+            </main>
+
+        </div>
+
+
+
+
         <script src="/Portfolio/JavaScript/script.js"></script>
+        <script src="/Portfolio/JavaScript/about.js"></script>
     </body>
 </html>
