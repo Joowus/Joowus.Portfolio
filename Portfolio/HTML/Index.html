@@ -74,21 +74,52 @@
 
                 <section id="projects">
                     <div class="projects-container">
-                        <h2>Projects</h2>
-                        <div class="project">
-                            <h3>Project One</h3>
-                            <div>
-                                <img src="/Portfolio/Images/Test/project1.png" alt="Project One Screenshot" class="project-image">
-                                <p>A web application that allows users to track their tasks and manage their time effectively.</p>
+
+                        <h2 class="projects-title">Projects</h2>
+
+                        <div class="projects-content">
+
+                            <p class="projects-intro">
+                                Here are some of the projects I've worked on by category:
+                            </p>
+                            <div class="project-categories">
+                                <button class="project-category-button project-category-active" data-category="all">All</button>
+                                <button class="project-category-button" data-category="beginner">Beginner Projects</button>
+                                <button class="project-category-button" data-category="100-projects">100-Projects</button>
+                                <button class="project-category-button" data-category="course-projects">Course Projects</button>
+                                <button class="project-category-button" data-category="other">Other Projects</button>
                             </div>
-                        </div>
-                        <div class="project">
-                            <h3>Project Two</h3>
-                            <div>
-                                <img src="/Portfolio/Images/project2.png" alt="Project Two Screenshot" class="project-image">
-                                 <p>A social media platform that connects people with similar interests and allows them to share content.</p>
+                            <p class="project-category-explanation">
+                                This includes projects from various categories such as beginner projects, 100-projects, course projects, and other personal projects.
+                            </p>
+
+                            <div class="projects-grid">
+
+                                <div class="project-card">
+                                    <h3 class="project-title">Project One</h3>
+                                    <div>
+                                        <img src="/Portfolio/Images/Test/project1.png" alt="Project One Screenshot" class="project-image">
+                                        <div class="project-desc-container">
+                                            <p class="project-description">A web application that allows users to track their tasks and manage their time effectively.</p>
+                                            <a class="project-link" href="/Portfolio/Projects/Project1.html">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <h3 class="project-title">Project Two</h3>
+                                    <div>
+                                        <img src="/Portfolio/Images/Test/project2.png" alt="Project Two Screenshot" class="project-image">
+                                        <div class="project-desc-container closed">
+                                            <p class="project-description">A social media platform that connects people with similar interests and allows them to share content.</p>
+                                            <a class="project-link" href="/Portfolio/Projects/Project2.html">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
+
                     </div>
                 </section>
 
@@ -104,5 +135,6 @@
 
         <script src="/Portfolio/JavaScript/script.js"></script>
         <script src="/Portfolio/JavaScript/about.js"></script>
+        <script src="/Portfolio/JavaScript/projects/all.js"></script>
     </body>
 </html>
