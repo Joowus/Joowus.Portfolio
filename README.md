@@ -1,2 +1,0 @@
-# Joowus.Portfolio
-Current portfolio
