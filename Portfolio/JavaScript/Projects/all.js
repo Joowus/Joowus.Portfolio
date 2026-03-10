@@ -7,7 +7,7 @@ function loadAllProjects() {
                 <img src="/Portfolio/Images/100-Projects/darkmode.png" alt="Dark Mode Toggle Screenshot" class="project-image">
                 <div class="project-desc-container">
                     <p class="project-description">A simple dark mode toggle for a web application.</p>
-                    <a class="project-link" href="http://127.0.0.1:5501/Vscode-Stuff/100-Projects/Finished/Project-Dark-Mode-Toggle/index.html">View Project</a>
+                    <a class="project-link" href="http://Vscode-Stuff/100-Projects/Finished/Project-Dark-Mode-Toggle/index.html">View Project</a>
                 </div>
             </div>
         </div>
