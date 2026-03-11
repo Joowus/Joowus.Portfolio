@@ -84,40 +84,19 @@
                                 Here are some of the projects I've worked on by category:
                             </p>
                             <div class="project-categories">
-                                <button class="project-category-button project-category-active" data-category="all">All</button>
-                                <button class="project-category-button" data-category="beginner">Beginner Projects</button>
-                                <button class="project-category-button" data-category="100-projects">100-Projects</button>
-                                <button class="project-category-button" data-category="course-projects">Course Projects</button>
-                                <button class="project-category-button" data-category="SPRINT-projects">SPRINT Projects</button>
-                                <button class="project-category-button" data-category="other">Other Projects</button>
+                                <button id="allProjectsBtn" class="project-category-button project-category-active" data-category="all">All</button>
+                                <button id="beginnerProjectsBtn" class="project-category-button" data-category="beginner">Beginner Projects</button>
+                                <button id="100ProjectsBtn" class="project-category-button" data-category="100-projects">100-Projects</button>
+                                <button id="courseProjectsBtn" class="project-category-button" data-category="course-projects">Course Projects</button>
+                                <button id="SPRINTProjectsBtn" class="project-category-button" data-category="SPRINT-projects">SPRINT Projects</button>
+                                <button id="otherProjectsBtn" class="project-category-button" data-category="other">Other Projects</button>
                             </div>
-                            <p class="project-category-explanation">
-                                This includes projects from various categories such as beginner projects, 100-projects, course projects, and other personal projects.
+                            <p id="projectCategoryExplanation" class="project-category-explanation">
+                                <!-- Explanation will be dynamically loaded here based on the selected category -->
                             </p>
 
                             <div id="projectsGrid" class="projects-grid">
-
-                                <div class="project-card">
-                                    <h3 class="project-title">Project One</h3>
-                                    <div>
-                                        <img src="/Portfolio/Images/Test/project1.png" alt="Project One Screenshot" class="project-image">
-                                        <div class="project-desc-container">
-                                            <p class="project-description">A web application that allows users to track their tasks and manage their time effectively.</p>
-                                            <a class="project-link" href="/Portfolio/Projects/Project1.html">View Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="project-card">
-                                    <h3 class="project-title">Project Two</h3>
-                                    <div>
-                                        <img src="/Portfolio/Images/Test/project2.png" alt="Project Two Screenshot" class="project-image">
-                                        <div class="project-desc-container closed">
-                                            <p class="project-description">A social media platform that connects people with similar interests and allows them to share content.</p>
-                                            <a class="project-link" href="/Portfolio/Projects/Project2.html">View Project</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- Projects will be dynamically loaded here based on the selected category -->
                             </div>
 
                         </div>
@@ -144,8 +123,8 @@
         </div>
 
 
-        <script src="/Portfolio/JavaScript/script.js"></script>
-        <script src="/Portfolio/JavaScript/about.js"></script>
-        <script src="/Portfolio/JavaScript/projects/all.js"></script>
+        <script type="module" src="/Portfolio/JavaScript/script.js"></script>
+        <script type="module" src="/Portfolio/JavaScript/about.js"></script>
+        <script type="module" src="/Portfolio/JavaScript/projects/all.js"></script>
     </body>
 </html>
