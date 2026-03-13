@@ -1,4 +1,7 @@
 import { loadAllProjects } from './Projects/all.js';
+import { loadBeginnerProjects } from './Projects/beginner.js';
+import { load100Projects } from './Projects/100-projects.js';
+
 
 const allProjectsBtn = document.getElementById('allProjectsBtn');
 const beginnerProjectsBtn = document.getElementById('beginnerProjectsBtn');
@@ -35,13 +38,13 @@ beginnerProjectsBtn.addEventListener('click', () => {
     clearActive();
     beginnerProjectsBtn.classList.add('project-category-active');
     projectsExplanation.textContent = "Simple projects that helped me learn the basics of programming and web development.";
-    loadAllProjects();
+    loadBeginnerProjects();
 });
 _100ProjectsBtn.addEventListener('click', () => {
     clearActive();
     _100ProjectsBtn.classList.add('project-category-active');
-    projectsExplanation.textContent = "A series of 100 small projects that I completed to practice and improve my coding skills.";
-    loadAllProjects();
+    projectsExplanation.textContent = "A series of small projects from a list of 100 that I completed to practice and improve my coding skills.";
+    load100Projects();
 });
 courseProjectsBtn.addEventListener('click', () => {
     clearActive();
