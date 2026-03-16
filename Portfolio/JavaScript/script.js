@@ -1,6 +1,9 @@
 import { loadAllProjects } from './Projects/all.js';
 import { loadBeginnerProjects } from './Projects/beginner.js';
 import { load100Projects } from './Projects/100-projects.js';
+import { loadCourseProjects } from './Projects/course.js';
+import { loadSPRINTProjects } from './Projects/SPRINT.js';
+import { loadOtherProjects } from './Projects/other.js';
 
 
 const allProjectsBtn = document.getElementById('allProjectsBtn');
@@ -49,18 +52,18 @@ _100ProjectsBtn.addEventListener('click', () => {
 courseProjectsBtn.addEventListener('click', () => {
     clearActive();
     courseProjectsBtn.classList.add('project-category-active');
-    projectsExplanation.textContent = "Projects that I completed as part of my coursework, demonstrating my ability to apply what I've learned in a structured environment.";
-    loadAllProjects();
+    projectsExplanation.textContent = "Projects that I completed as part of my courseworks, demonstrating my ability to apply what I've learned in a structured environment.";
+    loadCourseProjects();
 });
 SPRINTProjectsBtn.addEventListener('click', () => {
     clearActive();
     SPRINTProjectsBtn.classList.add('project-category-active');
     projectsExplanation.textContent = "Projects that I completed during intensive coding sprints, showcasing my ability to work under pressure and deliver results quickly.";
-    loadAllProjects();
+    loadSPRINTProjects();
 });
 otherProjectsBtn.addEventListener('click', () => {
     clearActive();
     otherProjectsBtn.classList.add('project-category-active');
     projectsExplanation.textContent = "A variety of projects that don't fit into the other categories but still demonstrate my skills and creativity.";
-    loadAllProjects();
+    loadOtherProjects();
 });
